@@ -64,6 +64,440 @@
 
 
 
+    <div class="listing">
+
+        <!-- FILTER start  -->
+
+        <div class="filter" id="filter-popup">
+
+            <div class="filter__table" id="filterTable">
+                <div class="filter__table--title">
+                    <h4>Filters</h4>
+                    <i onclick="closeFilter()" class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <!-- Category -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Category</h3>
+                        <li>
+                            <input type="checkbox" id="phone">
+                            <label for="phone">Phone</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="tws">
+                            <label for="tws">TWS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="watch">
+                            <label for="watch">Watch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="camera">
+                            <label for="camera">Camera</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Brand -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Brand</h3>
+                        <li>
+                            <input type="checkbox" id="apple">
+                            <label for="apple">Apple</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="samsung">
+                            <label for="samsung">Samsung</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="lava">
+                            <label for="lava">Lava</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="xiomi">
+                            <label for="xiomi">Xiomi</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sony">
+                            <label for="sony">Sony</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Price Range -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Price Range</h3>
+                        <li>
+                            <input type="radio" id="one" name="option">
+                            <label for="one">₹0 - ₹10,000</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="two" name="option">
+                            <label for="two">₹10,001 - ₹20,000</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="three" name="option">
+                            <label for="three">₹20,001 - ₹50,000</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="four" name="option">
+                            <label for="four">₹50,001 - ₹1,00,000</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="five" name="option">
+                            <label for="five">₹1,00,001 and above</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Color -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Color</h3>
+                        <li>
+                            <label for="color">Choose color:</label>
+                            <select name="color" id="color">
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="silver">Silver</option>
+                                <option value="grey">Grey</option>
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="gold">Gold</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ratings -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Ratings</h3>
+                        <li>
+                            <input type="checkbox" id="five-stars">
+                            <label for="five-stars">5 Stars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="four-stars">
+                            <label for="four-stars">4 Stars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="three-stars">
+                            <label for="three-stars">3 Stars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="two-stars">
+                            <label for="two-stars">2 Stars</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="one-star">
+                            <label for="one-star">1 Star</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Discount Offers -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Discount Offers</h3>
+                        <li>
+                            <input type="checkbox" id="ten-percent">
+                            <label for="ten-percent">10% off or more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="twenty-percent">
+                            <label for="twenty-percent">20% off or more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="thirty-percent">
+                            <label for="thirty-percent">30% off or more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="bogo">
+                            <label for="bogo">Buy One Get One Free</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="free-shipping">
+                            <label for="free-shipping">Free Shipping</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Availability -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Availability</h3>
+                        <li>
+                            <input type="radio" id="in-stock" name="availability">
+                            <label for="in-stock">In Stock</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="out-of-stock" name="availability">
+                            <label for="out-of-stock">Out of Stock</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="pre-order" name="availability">
+                            <label for="pre-order">Pre-Order</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="available-for-pickup" name="availability">
+                            <label for="available-for-pickup">Available for Pickup</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Shipping Options -->
+                <div class="filter__table--item">
+
+                    <ul>
+                        <h3>Shipping Options</h3>
+                        <li>
+                            <input type="checkbox" id="free-shipping-option">
+                            <label for="free-shipping-option">Free Shipping</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="same-day-delivery">
+                            <label for="same-day-delivery">Same-Day Delivery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="next-day-delivery">
+                            <label for="next-day-delivery">Next-Day Delivery</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="international-shipping">
+                            <label for="international-shipping">International Shipping</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="closeFilter()">Save Changes</button>
+
+            </div>
+        </div>
+
+        <!-- FILTER end  -->
+
+        <!-- PRODUCTS LISTING start  -->
+
+        <div class="breadcrumb">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Phone</li>
+            </ul>
+        </div>
+
+        <h3 class="products__listing--title">Phones</h3>
+        <!-- <button onclick="openFilter()">click</button> -->
+
+        <div class="products__listing">
+
+            <!-- CARD 1 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 1 end -->
+
+            <!-- CARD 2 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 2 end -->
+
+            <!-- CARD 3 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 3 end -->
+
+            <!-- CARD 4 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 4 end -->
+
+            <!-- CARD 5 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 5 end -->
+
+            <!-- CARD 6 start -->
+            <div class="products__listing--card">
+                <div class="products__listing--card-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="products__listing--card-title">
+                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                </div>
+                <div class="products__listing--card-rating">
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        Rating
+                    </p>
+                </div>
+                <div class="products__listing--card--price">
+                    <p class="products__listing--card--price-selling">$69</p>
+                    <p class="products__listing--card--price-original">$189</p>
+                    <p class="products__listing--card--price-off">24% OFF</p>
+                </div>
+                <div class="products__listing--card-button">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <!-- CARD 6 end -->
+
+        </div>
+    </div>
+
+    <!-- PRODUCTS LISTING end  -->
+
+
+    <script>
+        let filterOverlay = document.getElementById("filter-popup")
+        let filterTable = document.getElementById("filterTable")
+
+        function openFilter() {
+            filterOverlay.style.display = "block";
+            filterTable.style.left = "0";
+        }
+
+        function closeFilter() {
+            filterTable.style.left = "-30%";
+            filterOverlay.style.display = "none";
+        }
+
+
+    </script>
 </body>
 
 </html>

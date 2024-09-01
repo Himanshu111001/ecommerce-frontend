@@ -586,7 +586,171 @@
 // --------------------------------HOME end----------------------
 
 // --------------------------------LISTING start----------------------
+.listing {
+}
 
+// FILTER start
+.filter {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.105);
+  top: 0;
+  left: 0;
+  z-index: 4;
+  &__table {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: scroll;
+    transition: left 0.5s ease;
+    &--title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        font-size: 25px;
+        font-weight: 500;
+      }
+      i {
+        cursor: pointer;
+        font-size: 20px;
+      }
+    }
+    &--item {
+      ul {
+        background-color: #80808025;
+        padding: 10px;
+        line-height: 40px;
+        border-radius: 8px;
+        li {
+          list-style: none;
+          label {
+            font-weight: 600;
+            color: #000000c7;
+            cursor: pointer;
+          }
+          input[type="checkbox"] {
+            accent-color: #102439;
+          }
+          input[type="radio"] {
+            accent-color: #102439;
+          }
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #000000e5;
+      color: #fff;
+      outline: none;
+      border: none;
+    }
+    button:hover {
+      background-color: #000;
+    }
+  }
+}
+
+// FILTER end
+
+// PRODUCTS LISTING start
+
+.breadcrumb {
+  padding: 10px;
+  ul {
+    display: flex;
+    li {
+      cursor: pointer;
+      color: #00000074;
+      list-style: none;
+      font-size: 15px;
+    }
+    li + li::before {
+      content: ">";
+      margin: 10px;
+    }
+  }
+}
+.products__listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 50px;
+  &--title {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+  }
+  &--card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    cursor: pointer;
+    &-img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-title {
+      font-size: 16px;
+    }
+    &-rating {
+      p {
+        font-size: 12px;
+        i {
+          font-size: 15px;
+          color: gold;
+        }
+      }
+    }
+    &--price {
+      display: flex;
+      gap: 10px;
+      &-selling {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      &-original {
+        font-size: 20px;
+        text-decoration: line-through;
+        color: #0000007e;
+        font-weight: 600;
+      }
+      &-off {
+        font-size: 20px;
+        color: red;
+        font-weight: 700;
+      }
+    }
+    &-button {
+      button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        background-color: #ed2828;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+// PRODUCTS LISTING end
 // --------------------------------LISTING end----------------------
 
 // RESPONSIVE TABLET start
