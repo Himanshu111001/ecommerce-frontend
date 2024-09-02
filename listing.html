@@ -71,10 +71,12 @@
         <div class="filter" id="filter-popup">
 
             <div class="filter__table" id="filterTable">
+
                 <div class="filter__table--title">
                     <h4>Filters</h4>
                     <i onclick="closeFilter()" class="fa-regular fa-circle-xmark"></i>
                 </div>
+
                 <!-- Category -->
                 <div class="filter__table--item">
 
@@ -280,7 +282,7 @@
                     </ul>
                 </div>
 
-                <button onclick="closeFilter()">Save Changes</button>
+                <button>Save Changes</button>
 
             </div>
         </div>
@@ -289,197 +291,658 @@
 
         <!-- PRODUCTS LISTING start  -->
 
-        <div class="breadcrumb">
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Phone</li>
-            </ul>
-        </div>
+        <div class="product-listing__container">
 
-        <h3 class="products__listing--title">Phones</h3>
-        <!-- <button onclick="openFilter()">click</button> -->
+            <!-- HEADER start  -->
 
-        <div class="products__listing">
+            <div class="product-listing__container-header">
+                <div class="product-listing__container-header-breadcrumb">
+                    <ul>
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>Phone</li>
+                    </ul>
+                </div>
+                <div class="product-listing__container-header-filter-sort">
+                    <div class="product-listing__container-header-filter-open">
+                        <button onclick="openFilter()">
+                            Filters
+                            <i class="fa-solid fa-filter"></i>
+                        </button>
+                    </div>
 
-            <!-- CARD 1 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
+                    <div class="product-listing__container-header-sort-open">
+                        <ul>
+                            <li>
+                                <label for="color">Sort by</label>
+                                <select name="color" id="color">
+                                    <option value="blue">Relavance</option>
+                                    <option value="grey">Popularity</option>
+                                    <option value="white">Price High to Low</option>
+                                    <option value="silver">Price Low to High</option>
+                                    <option value="rating">Avg Customer Ratings</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
-                </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
-                </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
-                </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
-                </div>
+
             </div>
-            <!-- CARD 1 end -->
 
-            <!-- CARD 2 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
+            <!-- HEADER end  -->
+
+            <h3 class="products__listing--title">Phones</h3>
+
+
+            <div class="products__listing">
+
+                <!-- CARD 1 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone1-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>POCO C65 (Pastel Blue 4GB RAM 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
+                <!-- CARD 1 end -->
+
+                <!-- CARD 2 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone2-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Realme NARZO N61 (Voyage Blue, 6GB RAM 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
+                <!-- CARD 2 end -->
+
+                <!-- CARD 3 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone3-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>POCO C65 (Matte Black 4GB RAM 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
+                <!-- CARD 3 end -->
+
+                <!-- CARD 4 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone4-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Samsung Galaxy M14 4G (Sapphire Blue, 4GB 64GB)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
+                <!-- CARD 4 end -->
+
+                <!-- CARD 5 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone5-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Redmi 13C (Starshine Green, 4GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
+                <!-- CARD 5 end -->
+
+                <!-- CARD 6 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone6-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Apple iPhone 15 (128 GB) - Black</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 6 end -->
+
+                <!-- CARD 7 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone7-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Apple iPhone 15 (128 GB) - Red</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 7 end -->
+
+                <!-- CARD 8 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone8-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Redmi 12 5G (Moonstone Silver, 4GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 8 end -->
+
+                <!-- CARD 9 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone9-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Realme NARZO N53 (Feather Gold, 4GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 9 end -->
+
+                <!-- CARD 10 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone10-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Infinix Note 12 (Force Black, 6GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 10 end -->
+
+                <!-- CARD 11 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone11-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Vivo Y20G (Obsidian Black, 6GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 11 end -->
+
+                <!-- CARD 12 start -->
+                <div class="products__listing--card">
+                    <div class="products__listing--card-img">
+                        <img src="./image/listing-phone12-card.webp" alt="">
+                    </div>
+                    <div class="products__listing--card-detail">
+                        <div class="products__listing--card-title">
+                            <h4>Oppo A53s (Crystal Blue, 4GB RAM, 128GB Storage)</h4>
+                        </div>
+                        <div class="products__listing--card-rating">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Rating
+                            </p>
+                        </div>
+                        <div class="products__listing--card--price">
+                            <p class="products__listing--card--price-selling">$69</p>
+                            <p class="products__listing--card--price-original">$189</p>
+                            <p class="products__listing--card--price-off">24% OFF</p>
+                        </div>
+                        <div class="products__listing--card-limited-deal">
+                            <p>Limited Time Deal</p>
+                        </div>
+                        <div class="products__listing--card-emi">
+                            <p>EMI Available</p>
+                        </div>
+                        <div class="products__listing--card-original-delivery">
+                            <p> Free Delivery by <span>Friday</span></p>
+                        </div>
+                        <div class="products__listing--card-paid-delivery">
+                            <p>Fastest Delivery by <span>Tomorrow</span></p>
+                        </div>
+                        <div class="products__listing--card-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 12 end -->
+
             </div>
-            <!-- CARD 2 end -->
-
-            <!-- CARD 3 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
-                </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
-                </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
-                </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
-                </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <!-- CARD 3 end -->
-
-            <!-- CARD 4 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
-                </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
-                </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
-                </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
-                </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <!-- CARD 4 end -->
-
-            <!-- CARD 5 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
-                </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
-                </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
-                </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
-                </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <!-- CARD 5 end -->
-
-            <!-- CARD 6 start -->
-            <div class="products__listing--card">
-                <div class="products__listing--card-img">
-                    <img src="./image/phone-card.webp" alt="">
-                </div>
-                <div class="products__listing--card-title">
-                    <h4>Iphone 15 pro max (Titanium Gray)</h4>
-                </div>
-                <div class="products__listing--card-rating">
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        Rating
-                    </p>
-                </div>
-                <div class="products__listing--card--price">
-                    <p class="products__listing--card--price-selling">$69</p>
-                    <p class="products__listing--card--price-original">$189</p>
-                    <p class="products__listing--card--price-off">24% OFF</p>
-                </div>
-                <div class="products__listing--card-button">
-                    <button>ADD TO CART</button>
-                </div>
-            </div>
-            <!-- CARD 6 end -->
-
         </div>
     </div>
 
     <!-- PRODUCTS LISTING end  -->
+
+    <!-- TRUST ELEMENT start -->
+
+    <div class="trust">
+        <div>
+            <img src="./image/trust-icon1.png" alt="">
+            <p>Premium Quality</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon2.png" alt="">
+            <p>Free Shipping</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon3.png" alt="">
+            <p>COD Avilable</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon4.png" alt="">
+            <p>Easy Returns</p>
+        </div>
+
+    </div>
+
+    <!-- TRUST ELEMENT end -->
+
+    <!-- FOOTER start -->
+
+    <footer class="footer">
+        <ul class="footer-accordion">
+            <li>
+                <input type="checkbox" name="footer-accordion" id="who" checked>
+                <label for="who">Who We Are</label>
+                <div class="content">
+                    <p>About Us</p>
+                    <p>Weaves of Kindness</p>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>Blog</p>
+                    <p>Sitemap</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="policy">
+                <label for="policy">Policies</label>
+                <div class="content">
+                    <p>Terms & Conditions</p>
+                    <p>Billing Terms & Conditions</p>
+                    <p>Refund Policy</p>
+                    <p>Shipping Policy</p>
+                    <p>Cancellation & Return Policy</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="quick-links">
+                <label for="quick-links">Quick Links</label>
+                <div class="content">
+                    <p>Payment & Security</p>
+                    <p>Order Status</p>
+                    <p>My Account</p>
+                    <p>Tech Guide</p>
+                    <p>Wholesale</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="follow">
+                <label for="follow">Follow Us</label>
+                <div class="content">
+                    <p> <i class="fa-brands fa-instagram"></i></p>
+                    <p> <i class="fa-brands fa-facebook"></i></p>
+                    <p> <i class="fa-brands fa-linkedin"></i></p>
+                    <p> <i class="fa-brands fa-x-twitter"></i></p>
+                    <p><i class="fa-brands fa-youtube"></i></p>
+                </div>
+            </li>
+        </ul>
+        <div class="footer__copyright">
+            <p>Copyright © 2024 Himanshu Private Limited.
+                All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER end -->
 
 
     <script>
