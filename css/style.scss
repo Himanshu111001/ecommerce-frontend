@@ -78,10 +78,13 @@
     display: flex;
     flex-grow: 1;
     justify-content: end;
-    i {
-      cursor: pointer;
-      margin: 10px;
-      font-size: 20px;
+    a {
+      i {
+        color: #000;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 20px;
+      }
     }
   }
 }
@@ -1110,6 +1113,128 @@
 
 // --------------------------------PRODUCT DETAIL end----------------------
 
+// --------------------------------CART PAGE start----------------------
+
+.cart {
+  &__title {
+    margin: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    &-img {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 150px;
+      }
+    }
+    &-details {
+      width: 40%;
+    }
+    &-title {
+      font-weight: 500;
+    }
+    &-price {
+      font-weight: 700;
+    }
+    &-quantity {
+      padding: 5px;
+      background-color: #80808035;
+      // border: 1px solid black;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      button {
+        outline: none;
+        background: transparent;
+
+        cursor: pointer;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      input {
+        outline: none;
+        border: none;
+        background: transparent;
+        width: 80px;
+        text-align: center;
+      }
+    }
+    &-total {
+      width: 15%;
+    }
+    &-remove {
+      width: 15%;
+      button {
+        outline: none;
+        border: none;
+        font-size: 12px;
+        padding: 10px;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  &__summary {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+    }
+    &-details {
+      p {
+        font-size: 15px;
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    &-button {
+      cursor: pointer;
+      padding: 5px 10px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    .checkout {
+      background-color: #be0000;
+    }
+    .continue {
+      background-color: #000;
+    }
+  }
+}
+
+// --------------------------------CART PAGE end----------------------
+
 // RESPONSIVE TABLET start
 
 @media (max-width: 1024px) {
@@ -1147,17 +1272,23 @@
     &__items {
       width: 40%;
       height: 100vh;
-      background-color: black;
+      background-color: #160331;
       flex-direction: column;
       position: absolute;
-      top: 66px;
+      top: 70px;
       left: -40%;
       transition: left 0.5s ease;
       li {
+        border-bottom: 1px solid #ffffff62;
+        font-weight: 300;
         a {
           color: white;
           padding: 10px 20px;
         }
+      }
+      li::before {
+        content: ">";
+        color: #fff;
       }
       li:hover {
         background-color: #fff;
@@ -1484,8 +1615,6 @@
           aspect-ratio: 1/1;
         }
       }
-      &-detail {
-      }
       &-title {
         font-size: 12px;
       }
@@ -1539,6 +1668,60 @@
 
   // PRODUCT LISTING end
   // --------------------------------LISTING end----------------------
+
+  // --------------------------------CART PAGE start----------------------
+
+  .cart {
+    &__items {
+      padding: 0;
+      &-title {
+        font-size: 15px;
+      }
+    }
+    &__item {
+      padding: 0;
+      padding-bottom: 20px;
+      gap: 10px;
+      &-img {
+        img {
+          width: 100px;
+        }
+      }
+      &-details {
+        font-size: 12px;
+      }
+      &-quantity {
+        width: 80px;
+        button {
+          font-size: 12px;
+        }
+        input {
+          width: 30px;
+        }
+      }
+      &-total {
+        font-size: 12px;
+      }
+      &-remove {
+        button {
+          outline: none;
+          border: none;
+          font-size: 8px;
+          padding: 5px;
+          background: #000;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+    &__summary {
+      &-button {
+        font-size: 12px;
+      }
+    }
+  }
 }
+
+// --------------------------------CART PAGE end----------------------
 
 // RESPONSIVE MOBILE end

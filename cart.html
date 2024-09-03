@@ -5,9 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- NAVBAR start  -->
+
+    <div class="navigation-container">
+
+        <nav class="navigation">
+
+            <div class="navigation__logo--desktop">
+                <a href="/index.html">
+                    <img src="./image/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- HAMBURGER start -->
+
+            <div class="navigation__hamburger">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="navigation__items">
+                    <li><a href="/listing.html">Phone</a></li>
+                    <li><a href="/listing.html">Camera</a></li>
+                    <li><a href="/listing.html">Watch</a></li>
+                    <li><a href="/listing.html">TWS</a></li>
+                </ul>
+
+            </div>
+
+            <div class="navigation__logo--mobile">
+                <a href="/index.html">
+                    <img src="./image/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- HAMBURGER end -->
+
+            <div class="navigation__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search here">
+            </div>
+            <div class="navigation__icon">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- NAVBAR end  -->
+
+    <div class="breadcrumb">
+        <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Watch</li>
+            <li>Prowatch VN</li>
+            <li>Cart</li>
+
+        </ul>
+    </div>
+
+    <!-- CART PAGE start -->
+    <h2 class="cart__title">Your Shopping Cart</h2>
+
+    <div class="cart">
+
+        <!-- CART ITEMS start -->
+        <div class="cart__items">
+            <h3 class="cart__items-title">Products</h3>
+
+            <!-- CART ITEM 1 start -->
+            <div class="cart__item">
+                <div class="cart__item-img">
+                    <img src="./image/phone-card.webp" alt="">
+                </div>
+                <div class="cart__item-details">
+                    <h4 class="cart__item-title">Iphone 15 Pro Max (Titanium grey)</h4>
+                    <p class="cart__item-price">$500</p>
+                    <div class="cart__item-quantity">
+                        <button class="cart__item-quantity-minus">-</button>
+                        <input type="number" value="1">
+                        <button class="cart__item-quantity-plus">+</button>
+                    </div>
+                </div>
+                <div class="cart__item-total">
+                    <h4>Total</h4>
+                    <p>$500</p>
+                </div>
+                <div class="cart__item-remove">
+                    <button><i class="fa-solid fa-trash"></i> Remove</button>
+                </div>
+            </div>
+            <!-- CART ITEM 1 end -->
+
+            <!-- CART ITEM 2 start -->
+            <div class="cart__item">
+                <div class="cart__item-img">
+                    <img src="./image/watch-card.webp" alt="">
+                </div>
+                <div class="cart__item-details">
+                    <h4 class="cart__item-title">Fire-Boltt Snapp Smart Watch</h4>
+                    <p class="cart__item-price">$300</p>
+                    <div class="cart__item-quantity">
+                        <button class="cart__item-quantity-minus">-</button>
+                        <input type="number" value="2">
+                        <button class="cart__item-quantity-plus">+</button>
+                    </div>
+                </div>
+                <div class="cart__item-total">
+                    <h4>Total</h4>
+                    <p>$600</p>
+                </div>
+                <div class="cart__item-remove">
+                    <button><i class="fa-solid fa-trash"></i> Remove</button>
+                </div>
+            </div>
+            <!-- CART ITEM 2 end -->
+
+        </div>
+        <!-- CART ITEMS end -->
+
+        <!-- CART SUMMARY start -->
+        <div class="cart__summary">
+            <h3 class="cart__summary-title">Order Summary</h3>
+            <div class="cart__summary-details">
+                <p>Subtotal: <span>$1100</span></p>
+                <p>Shipping: <span>$50</span></p>
+                <p>Discount: <span>$100</span></p>
+                <p><strong>Total: <span>$1050</span></strong></p>
+            </div>
+            <button class="cart__summary-button checkout"><a href="/checkout.html">Proceed to Checkout</a></button>
+            <button class="cart__summary-button continue"><a href="/index.html">Continue Shopping</a></button>
+        </div>
+        <!-- CART SUMMARY end -->
+
+    </div>
+    <!-- CART PAGE end -->
+
+    <!-- TRUST ELEMENT start -->
+
+    <div class="trust">
+        <div>
+            <img src="./image/trust-icon1.png" alt="">
+            <p>Premium Quality</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon2.png" alt="">
+            <p>Free Shipping</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon3.png" alt="">
+            <p>COD Avilable</p>
+        </div>
+        <div>
+            <img src="./image/trust-icon4.png" alt="">
+            <p>Easy Returns</p>
+        </div>
+
+    </div>
+
+    <!-- TRUST ELEMENT end -->
+
+    <!-- FOOTER start -->
+
+    <footer class="footer">
+        <ul class="footer-accordion">
+            <li>
+                <input type="checkbox" name="footer-accordion" id="who" checked>
+                <label for="who">Who We Are</label>
+                <div class="content">
+                    <p>About Us</p>
+                    <p>Weaves of Kindness</p>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>Blog</p>
+                    <p>Sitemap</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="policy">
+                <label for="policy">Policies</label>
+                <div class="content">
+                    <p>Terms & Conditions</p>
+                    <p>Billing Terms & Conditions</p>
+                    <p>Refund Policy</p>
+                    <p>Shipping Policy</p>
+                    <p>Cancellation & Return Policy</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="quick-links">
+                <label for="quick-links">Quick Links</label>
+                <div class="content">
+                    <p>Payment & Security</p>
+                    <p>Order Status</p>
+                    <p>My Account</p>
+                    <p>Tech Guide</p>
+                    <p>Wholesale</p>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="footer-accordion" id="follow">
+                <label for="follow">Follow Us</label>
+                <div class="content">
+                    <p> <i class="fa-brands fa-instagram"></i></p>
+                    <p> <i class="fa-brands fa-facebook"></i></p>
+                    <p> <i class="fa-brands fa-linkedin"></i></p>
+                    <p> <i class="fa-brands fa-x-twitter"></i></p>
+                    <p><i class="fa-brands fa-youtube"></i></p>
+                </div>
+            </li>
+        </ul>
+        <div class="footer__copyright">
+            <p>Copyright © 2024 Himanshu Private Limited.
+                All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER end -->
+
 
 </body>
 
