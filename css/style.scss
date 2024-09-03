@@ -1116,12 +1116,13 @@
 // --------------------------------CART PAGE start----------------------
 
 .cart {
-  &__title {
-    margin: 20px;
-  }
   display: flex;
   flex-direction: column;
   margin: 20px;
+  gap: 20px;
+  &__title {
+    margin: 20px;
+  }
   &__items {
     display: flex;
     flex-direction: column;
@@ -1195,6 +1196,8 @@
     }
   }
   &__summary {
+    align-self: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     width: 300px;
     display: flex;
@@ -1205,35 +1208,164 @@
       font-size: 20px;
     }
     &-details {
-      p {
-        font-size: 15px;
-        font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-weight: 500;
+          color: #00000091;
+        }
         span {
-          font-weight: 400;
+          font-weight: 700;
         }
       }
     }
     &-button {
+      width: 100%;
       cursor: pointer;
       padding: 5px 10px;
       outline: none;
       border: none;
       font-size: 18px;
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
+      text-decoration: none;
+      color: #fff;
     }
-    .checkout {
+    .cart-checkout-btn {
       background-color: #be0000;
     }
-    .continue {
+    .cart-continue-btn {
       background-color: #000;
     }
   }
 }
 
 // --------------------------------CART PAGE end----------------------
+
+// --------------------------------CHECKOUT start----------------------
+
+.checkout {
+  margin: 20px;
+  display: flex;
+  gap: 50px;
+  &__shipping-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    &-information {
+      display: flex;
+      justify-content: space-between;
+      &--address {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      &--contact {
+        span {
+          font-size: 15px;
+          font-style: italic;
+          font-weight: 500;
+        }
+      }
+    }
+    &-payment {
+      display: flex;
+      flex-direction: column;
+      &--form {
+        display: flex;
+        flex-direction: column;
+        .one {
+          display: flex;
+          flex-direction: column;
+        }
+        .two {
+          display: flex;
+          justify-content: space-between;
+          p {
+          }
+        }
+      }
+    }
+  }
+  &__shipping-order-summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &--orders {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      &-item {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+      }
+      &-img {
+        width: 10%;
+        img {
+          width: 100%;
+        }
+      }
+      &-title {
+        width: 40%;
+      }
+      &-quantity {
+        width: 25%;
+        div {
+          width: 90px;
+          background-color: #8080803a;
+          padding: 5px;
+          button {
+            outline: none;
+            border: none;
+            width: 20px;
+            background: transparent;
+          }
+          input {
+            outline: none;
+            border: none;
+            background: transparent;
+            text-align: center;
+            width: 30px;
+          }
+        }
+      }
+      &-total {
+        width: 25%;
+        p {
+          font-weight: 600;
+        }
+      }
+    }
+    &--price {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-weight: 500;
+          color: #00000091;
+        }
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------CHECKOUT end----------------------
 
 // RESPONSIVE TABLET start
 
@@ -1353,8 +1485,6 @@
         content: "-";
       }
       li {
-        // border-bottom: 1px solid #ffffff7e;
-
         label {
           display: flex;
           align-items: center;
@@ -1463,6 +1593,20 @@
   // PRODUCT DETAILED DESCRIPTION end
 
   // --------------------------------PRODUCT DETAIL end----------------------
+
+  // --------------------------------CHECKOUT start----------------------
+
+  .checkout {
+    flex-direction: column;
+    &__shipping-details {
+      width: 100%;
+    }
+    &__shipping-order-summary {
+      width: 100%;
+    }
+  }
+
+  // --------------------------------CHECKOUT end----------------------
 }
 
 // RESPPONSIVE TABLET end
@@ -1715,6 +1859,7 @@
       }
     }
     &__summary {
+      align-self: flex-start;
       &-button {
         font-size: 12px;
       }

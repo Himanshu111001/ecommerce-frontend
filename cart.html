@@ -136,14 +136,28 @@
         <!-- CART SUMMARY start -->
         <div class="cart__summary">
             <h3 class="cart__summary-title">Order Summary</h3>
+            <h4>AMOUNT TO PAY</h4>
             <div class="cart__summary-details">
-                <p>Subtotal: <span>$1100</span></p>
-                <p>Shipping: <span>$50</span></p>
-                <p>Discount: <span>$100</span></p>
-                <p><strong>Total: <span>$1050</span></strong></p>
+
+                <div>
+                    <p>SUBTOTAL:</p>
+                    <span>$567</span>
+                </div>
+                <div>
+                    <p>SHIPPING:</p>
+                    <span>$0</span>
+                </div>
+                <div>
+                    <p>TOTAL:</p>
+                    <span>$567</span>
+                </div>
             </div>
-            <button class="cart__summary-button checkout"><a href="/checkout.html">Proceed to Checkout</a></button>
-            <button class="cart__summary-button continue"><a href="/index.html">Continue Shopping</a></button>
+            <a href="/checkout.html">
+                <button class="cart__summary-button cart-checkout-btn">Proceed to Checkout</button>
+            </a>
+            <a href="/index.html">
+                <button class="cart__summary-button cart-continue-btn">Continue Shopping</button>
+            </a>
         </div>
         <!-- CART SUMMARY end -->
 

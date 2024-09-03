@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fcce8be489.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR start  -->
+
+    <div class="navigation-container">
+
+        <nav class="navigation">
+
+            <div class="navigation__logo--desktop">
+                <a href="/index.html">
+                    <img src="./image/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- HAMBURGER start -->
+
+            <div class="navigation__hamburger">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="navigation__items">
+                    <li><a href="/listing.html">Phone</a></li>
+                    <li><a href="/listing.html">Camera</a></li>
+                    <li><a href="/listing.html">Watch</a></li>
+                    <li><a href="/listing.html">TWS</a></li>
+                </ul>
+
+            </div>
+
+            <div class="navigation__logo--mobile">
+                <a href="/index.html">
+                    <img src="./image/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- HAMBURGER end -->
+
+            <div class="navigation__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search here">
+            </div>
+            <div class="navigation__icon">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- NAVBAR end  -->
+
+    <h2 class="checkout__title">CHECKOUT PAGE</h2>
+
+    <div class="checkout">
+
+        <div class="checkout__shipping-details">
+            <h3 class="checkout__shipping-details-information--title">
+                SHIPPING DETAILS
+            </h3>
+            <div class="checkout__shipping-details-information">
+                <p class="checkout__shipping-details-information--address">
+                    HIMANSHU SHISHODIA <br>
+                    Ghaziabad, Uttar Pradesh <br>
+                    201017, India
+                </p>
+                <p class="checkout__shipping-details-information--contact">
+                    <span>+91 9540589224</span> <br>
+                    <span>himanshu.11.shishodia@gmail.com</span>
+                </p>
+            </div>
+            <div class="checkout__shipping-details-payment">
+                <h3 class="checkout__shipping-details-payment--title">
+                    PAYMENT DETAILS
+                </h3>
+
+                <div class="checkout__shipping-details-payment--form">
+                    <div>
+                        <p>NAME ON CARD</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>CARD NUMBER</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>VALIDITY</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>CVV</p>
+                        <input type="text">
+                    </div>
+
+                </div>
+                <div class="checkout__shipping-details-payment--cta">
+                    <button>PROCEED TO PAY</button>
+                    <button>EDIT CART</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="checkout__shipping-order-summary">
+
+
+            <div class="checkout__shipping-order-summary--orders">
+                <h3 class="checkout__shipping-order-summary--title">YOUR ORDER</h3>
+
+                <!-- ITEM 1 start  -->
+
+                <div class="checkout__shipping-order-summary--orders-item">
+
+                    <div class="checkout__shipping-order-summary--orders-img">
+                        <img src="./image/tws-card.webp" alt="">
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-title">
+                        <p>Mivi SuperPods Halo</p>
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-quantity">
+                        <div>
+                            <button>-</button>
+                            <input type="text" value="2">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-total">
+                        <p>$300</p>
+                    </div>
+
+                </div>
+
+                <!-- ITEM 1 end  -->
+
+                <!-- ITEM 2 start  -->
+                <div class="checkout__shipping-order-summary--orders-item">
+
+                    <div class="checkout__shipping-order-summary--orders-img">
+                        <img src="./image/camera-card.webp" alt="">
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-title">
+                        <p>Nikon Z50 Mirrorless Camera</p>
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-quantity">
+                        <div>
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="checkout__shipping-order-summary--orders-total">
+                        <p>$400</p>
+                    </div>
+
+                    <!-- ITEM 2 end  -->
+                </div>
+            </div>
+
+            <div class="checkout__shipping-order-summary--price">
+                <h4>AMOUNT TO PAY</h4>
+                <div class="pricing">
+                    <p>SUBTOTAL:</p>
+                    <span>$567</span>
+                </div>
+                <div class="pricing">
+                    <p>SHIPPING:</p>
+                    <span>$0</span>
+                </div>
+                <div class="pricing">
+                    <p>TOTAL:</p>
+                    <span>$567</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
