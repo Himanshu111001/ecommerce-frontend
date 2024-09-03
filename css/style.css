@@ -1130,6 +1130,9 @@
   display: flex;
   gap: 50px;
 }
+.checkout__title {
+  margin: 30px;
+}
 .checkout__shipping-details {
   display: flex;
   flex-direction: column;
@@ -1154,18 +1157,42 @@
 .checkout__shipping-details-payment {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .checkout__shipping-details-payment--form {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
-.checkout__shipping-details-payment--form .one {
-  display: flex;
-  flex-direction: column;
+.checkout__shipping-details-payment--form label {
+  font-weight: 600;
 }
-.checkout__shipping-details-payment--form .two {
+.checkout__shipping-details-payment--form label input {
+  padding: 10px;
+  width: 100%;
+}
+.checkout__shipping-details-payment--form div {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+.checkout__shipping-details-payment--form div label input {
+  width: 100%;
+}
+.checkout__shipping-details-payment--cta button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.checkout__shipping-details-payment--cta .pay {
+  background-color: #ec2020;
+  color: #fff;
+}
+.checkout__shipping-details-payment--cta .edit {
+  background-color: #000;
+  color: #fff;
 }
 .checkout__shipping-order-summary {
   width: 50%;
@@ -1574,5 +1601,14 @@
   }
   .cart__summary-button {
     font-size: 12px;
+  }
+  .checkout__shipping-details-information {
+    flex-direction: column;
+  }
+  .checkout__shipping-order-summary--orders-title {
+    font-size: 12px;
+  }
+  .checkout__shipping-order-summary--orders-img {
+    width: 25%;
   }
 }/*# sourceMappingURL=style.css.map */

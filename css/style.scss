@@ -1249,6 +1249,9 @@
   margin: 20px;
   display: flex;
   gap: 50px;
+  &__title {
+    margin: 30px;
+  }
   &__shipping-details {
     display: flex;
     flex-direction: column;
@@ -1274,18 +1277,44 @@
     &-payment {
       display: flex;
       flex-direction: column;
+      gap: 20px;
       &--form {
         display: flex;
         flex-direction: column;
-        .one {
-          display: flex;
-          flex-direction: column;
+        gap: 5px;
+        label {
+          font-weight: 600;
+          input {
+            padding: 10px;
+            width: 100%;
+          }
         }
-        .two {
+        div {
           display: flex;
           justify-content: space-between;
-          p {
+          gap: 10px;
+          width: 100%;
+          label {
+            input {
+              width: 100%;
+            }
           }
+        }
+      }
+      &--cta {
+        button {
+          padding: 10px 20px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+        .pay {
+          background-color: #ec2020;
+          color: #fff;
+        }
+        .edit {
+          background-color: #000;
+          color: #fff;
         }
       }
     }
@@ -1865,8 +1894,32 @@
       }
     }
   }
-}
 
-// --------------------------------CART PAGE end----------------------
+  // --------------------------------CART PAGE end----------------------
+
+  // --------------------------------CHECKOUT PAGE start----------------------
+
+  .checkout {
+    &__shipping-details {
+      &-information {
+        flex-direction: column;
+      }
+    }
+    &__shipping-order {
+      &-summary {
+        &--orders {
+          &-title {
+            font-size: 12px;
+          }
+          &-img {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+
+  // --------------------------------CHECKOUT PAGE end----------------------
+}
 
 // RESPONSIVE MOBILE end
